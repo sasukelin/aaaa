@@ -6,8 +6,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #003366;
-    /* azul */
+    background-color: #003366; /* azul */
     padding: 15px;
 }
 
@@ -17,14 +16,19 @@ header .nav-link {
 }
 
 header .nav-link:hover {
-    color: #f2b705;
-    /* amarillo */
+    color: #f2b705; /* amarillo */
 }
 
 /* Título */
 h1 {
     color: #003366;
-    margin-bottom: 20px;
+    margin-bottom: 10px !important; /* menos espacio debajo del título */
+}
+
+/* Sección inicio (reduce espacio) */
+#inicio {
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
 }
 
 /* Formulario */
@@ -33,14 +37,22 @@ form {
     margin: 0 auto;
 }
 
-button {
-    background-color: #f2b705;
-    color: #ffffff;
-    font-weight: bold;
+/* Botones (verde igual al header superior) */
+button,
+.btn-success {
+    background-color: #A6E22E !important; /* Verde igual al header */
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    color: #fff !important;
 }
 
-button:hover {
-    background-color: #d9a404;
+button:hover,
+.btn-success:hover {
+    background-color: #8BC220 !important; /* Verde más oscuro */
+    color: #fff !important;
 }
 
 /* Pie de página */
